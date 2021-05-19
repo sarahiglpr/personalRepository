@@ -1,0 +1,45 @@
+.separation-line{
+    border-left: 1px solid lightgray;
+}
+.title-style{
+    font-style: oblique;
+    text-align: center;
+    color: green;
+    font-family: auto;
+}
+.align-button{
+    text-align: right;
+}
+.date-style{
+    font-size: 11px;
+    width: 100%;
+    border: 0;
+    text-align: right;
+}
+.title-inspire, .title-inspire-2{
+    font-style: oblique;
+    text-align: center;
+    font-family: auto;
+}
+.title-inspire{
+    color: white;
+    background-color: darkseagreen;
+}
+.title-inspire-2{
+   color: black;
+}
+.author{
+    text-align: right;
+    font-style: italic;
+}
+.content{
+    text-align: justify;
+}
+.quote{   
+    font-size: 14px;
+    height: 155px;
+    width: 100%;
+}
+.remove-button{
+    text-align: right;
+}

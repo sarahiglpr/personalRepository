@@ -1,0 +1,40 @@
+<div class="container mt-2">
+    <div class="row justify-content-md-center">
+        <div class="alert alert-danger" role="alert" *ngIf='showAlert'>
+            {{message}}
+        </div>
+        <div class="col col-lg-9 mr-1">
+            <div class="row">
+                <h1 class="title-style" id="title">{{title}}</h1>
+                <form>
+                    <div class="form-group py-1 align-button">
+                        <textarea class="form-control" id="qoute-text" rows="3" placeholder="Write out your ideas"
+                            [formControl]="qoute" id="quote-textarea"></textarea>
+                        <div id="error-max-length" *ngIf="qoute.errors?.maxlength">
+                            Must be less to 160 characters long.
+                        </div>
+                        <button type="button" class="btn btn-outline-success my-2" (click)="add()" id="create-quote">Create a new quoute</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row" [formGroup]="quotesContainer">
+                <div class=" col-lg-4 my-2" *ngFor="let quote of allQuotes; let i = index" formArrayName="quotes">
+                    <div [formGroupName]="i" (mouseover)="showDeleteBtn(i)" (mouseleave)="hideDeleteBtn()">
+                        <input class="date-style" formControlName="publicationDate" />
+                        <textarea class="form-control quote" formControlName="content"></textarea>
+                        <div class="remove-button">
+                            <button class="btn btn-outline-success my-2" *ngIf="removeIndex === i">Remove Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 separation-line ml-1">
+            <h2 class="title-inspire">To inspire you</h2>
+            <h4 class="title-inspire-2">Quote of the day</h4>
+            <p class="content">{{quoteDay.content}}</p>
+            <p class="author">{{quoteDay.author}}</p>
+        </div>
+    </div>
+
+</div>
