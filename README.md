@@ -19,3 +19,7 @@ All instructions must be executed on the component quote-main.component
 7.- Create a test case to validate if the "Create new quote" button is inserting a new element in the quotes Form Array. 
 
 8.- Disable the "Create new quote" button, if the textarea is empty or greater than 160 characters.
+![Uploading Screen Shot 2021-05-18 at 9.41.35.png
+Uploading Screen Recording 2021-05-18 at 9.35.44.mov…
+
+…]()
