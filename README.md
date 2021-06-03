@@ -21,5 +21,6 @@ All instructions must be executed on the component quote-main.component
 8.- Disable the "Create new quote" button, if the textarea is empty or greater than 160 characters.
 
 Screen Shot 2021-05-18 at 9.41.35
-Screen Recording 2021-05-18 at 9.35.44<img width="1203" alt="Screen Shot 2021-05-18 at 9 41 35" src="https://user-images.githubusercontent.com/60264238/120689752-0be3fb80-c46a-11eb-9675-3aa4a6dd8d80.png">
+Screen Recording 2021-05-18 at 9.35.44<img width="1203" alt="Screen Shot 2021-05-18 at 9 41 35" src="https://user-images.githubusercontent.com/60264238/120689846-2918ca00-c46a-11eb-8b8b-4115de0347db.png">
+
 
